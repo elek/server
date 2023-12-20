@@ -16,10 +16,6 @@ spec:
     spec:
       containers:
         - name: server
-          env:
-            - name: foo
-              value: bor
-
           args:
             - python
             - -m
