@@ -4,7 +4,6 @@ metadata:
   name: server
   labels:
     app: server
-    foo: bar
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
@@ -17,9 +16,6 @@ spec:
     spec:
       containers:
         - name: server
-          env:
-          - name: xxx
-            value: yyy           
           args:
             - python
             - -m
