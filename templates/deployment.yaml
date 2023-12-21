@@ -9,7 +9,6 @@ spec:
   selector:
     matchLabels:
       app: server
-      foo: bar
   template:
     metadata:
       labels:
